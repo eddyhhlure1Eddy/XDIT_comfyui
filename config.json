@@ -1,0 +1,29 @@
+{
+    "xdit_path": "C:/Users/Administrator/Desktop/xdit/xDiT-main/xDiT-main",
+    "parallel": {
+        "default_world_size": 2,
+        "ulysses_degree": 2,
+        "pipefusion_parallel_degree": 1,
+        "use_cfg_parallel": true,
+        "use_parallel_vae": false
+    },
+    "optimization": {
+        "use_torch_compile": false,
+        "use_onediff": false,
+        "warmup_steps": 1
+    },
+    "models": {
+        "flux": {
+            "id": "black-forest-labs/FLUX.1-schnell",
+            "local_path": "models/flux"
+        },
+        "pixart": {
+            "id": "PixArt-alpha/PixArt-XL-2-1024-MS",
+            "local_path": "models/pixart"
+        },
+        "sd3": {
+            "id": "stabilityai/stable-diffusion-3-medium-diffusers",
+            "local_path": "models/sd3"
+        }
+    }
+} 
